@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<title>Hospital Management System</title>
+	<!-- Meta tag Keywords -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8" />
+	<meta name="keywords" content="Medic Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!--// Meta tag Keywords -->
+
+	<!-- Custom-Files -->
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<!-- Bootstrap-Core-CSS -->
+	<link rel="stylesheet" href="static/css/style.css" type="text/css" media="all" />
+	<!-- Style-CSS -->
+	<link rel="stylesheet" href="static/css/fontawesome-all.css">
+	<!-- Font-Awesome-Icons-CSS -->
+	<!-- //Custom-Files -->
+
+	<!-- Web-Fonts -->
+	<link href="static///fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	    rel="stylesheet">
+	<link href="static///fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+	    rel="stylesheet">
+	<!-- //Web-Fonts -->
+    <!-- <link href="static/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="static/css/bootstrap.css" rel="stylesheet" type="text/css ">
+    <script src="static/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="static/js/bootstrap.js" type="text/javascript"></script>
+</head> -->
+
+<body>
+	<!-- header -->
+	
+	<!-- //top-bar -->
+
+	<!-- header 2 -->
+	<div id="home">
+		<!-- navigation -->
+		<div class="main-top py-1">
+			<nav class="navbar navbar-expand-lg navbar-light fixed-navi">
+				<div class="container">
+					<!-- logo -->
+					<h1>
+						<a class="navbar-brand font-weight-bold font-italic" href="static/index.html">
+							<span>M</span>edic
+							<i class="fas fa-syringe"></i>
+						</a>
+					</h1>
+					<!-- //logo -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-lg-auto">
+							<li class="nav-item  mt-lg-0 mt-3">
+								<a class="nav-link" href="doc">Home
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+							 <li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href=""></a>
+							</li>
+							<!-- <li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="static/#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								    aria-haspopup="true" aria-expanded="false">
+									
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+									<a class="dropdown-item" href=""></a>
+									<a class="dropdown-item" href=""></a>
+									 <a class="dropdown-item" href="">Blog</a>
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="static/single.html">Single Page</a> -->
+								<!-- </div> -->
+							<!-- </li> --> 
+							<li class="nav-item mx-lg-4 my-lg-0 my-3">
+								<a class="nav-link" href=""></a>
+							</li>
+							 <li class="nav-item">
+								<a class="nav-link" href="logout">Logout</a>
+							</li> 
+						</ul>
+						
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+	</div>
+	
+
+	<!-- banner 2 -->
+	<div class="inner-banner-w3ls">
+		<div class="container">
+
+		</div>
+		<!-- //banner 2 -->
+	</div>
+	<!-- page details -->
+	<div class="breadcrumb-agile">
+		<div aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item">
+					<a href="doc">Home</a>
+				</li>
+				<li class="breadcrumb-item active" aria-current="page">Medical Officer</li>
+			</ol>
+		</div>
+	</div>
+	<!-- //page details -->
+
+	<!-- gallery -->
+	<div class="gallery py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="w3ls-titles text-center mb-5">
+				<h3 class="title">Medical Officer</h3>
+				<span>
+					<i class="fas fa-user-md"></i>
+				</span>
+				<p class="mt-2"></p>
+			</div>
+            <div class="appointment py-5">
+                <div class="py-xl-5 py-lg-3">
+                    <!-- <div class="w3ls-titles text-center mb-5">
+                        <h3 class="title">Appointment</h3>
+                        <span>
+                            <i class="fas fa-user-md"></i>
+                        </span>
+                        <p class="mt-2">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div> -->
+                    <div class="d-flex">
+                        <div class="appoint-img">
+        
+                        </div>
+                        <div class="contact-right-w3l appoint-form">
+                            <h5 class="title-w3 text-center mb-5">Doctor Registration form</h5>
+                            <form method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Name</label>
+                                    <input type="text" class="form-control"  name="n1" id="recipient-name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-phone" class="col-form-label">Doctor ID</label>
+                                    <input type="text" class="form-control"  name="n2" id="recipient-phone" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-name" class="col-form-label">Department</label>
+                                    <input type="text" class="form-control"  name="n3" id="recipient-name" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-phone" class="col-form-label">Qualification</label>
+                                    <input type="text" class="form-control"  name="n4" id="recipient-phone" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-phone" class="col-form-label">Experience</label>
+                                    <input type="text" class="form-control"  name="n5" id="recipient-phone" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-phone" class="col-form-label">Contact</label>
+                                    <input type="text" class="form-control"  name="n6" id="recipient-phone" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="recipient-phone" class="col-form-label">Photo</label>
+                                    <input type="file" class="form-control"  name="n7" id="recipient-phone" required="">
+                                </div>
+                                <input type="submit" value="Register" class="btn_apt">
+                            </form>
+							<br><br>
+
+
+							
+							<h6 style="color:red;font-weight:bold;"><center>{{m}}</center></h6>
+                        </div>
+                        <div class="clerafix"></div>
+                    </div>
+                </div>
+            </div>
+
+                            <div class="col-md-12 col-lg-12">
+                                <h2><u>Doctors Details</u></h2><br><br>
+                                
+                                <table class="table table-hover table-striped table-bordered">
+                                    {% if data %}
+                                    <tr>
+                                        <th>ID</th><th>Name</th><th>Doctor_ID</th>
+                                        <th>Department</th><th>Qualification</th>
+                                        <th>Experience</th><th>Contact</th><th>Photo</th>
+                                    </tr>
+                                    {% for i in data %}
+                                    <tr>
+                                        <td>{{i.0}}</td><td>{{i.1}}</td><td>{{i.2}}</td>
+                                        <td>{{i.3}}</td><td>{{i.4}}</td><td>{{i.5}}</td>
+                                        <td>{{i.6}}</td><td><img src="/static/upload/{{i.7}}" height="100"></td>
+                                        <td><a href="docupdate?id={{i.0}}"><button type="button" class="btn btn-primary">Update</button></a></td>
+                                        <td><a href="docdel?id={{i.0}}"><button type="button" class="btn btn-primary">Delete</button></a></td>
+                                    </tr>
+                                    </tr>
+                                    {% endfor %}
+                                {% endif %}
+                                    </table>
+                                    </div>
+                               <!-- Js files -->
+	<!-- JavaScript -->
+	<script src="static/js/jquery-2.2.3.min.js"></script>
+	<!-- Default-JavaScript-File -->
+
+	<!--start-date-piker-->
+	<link rel="stylesheet" href="static/css/jquery-ui.css" />
+	<script src="static/js/jquery-ui.js"></script>
+	<script>
+		$(function () {
+			$("#datepicker,#datepicker1").datepicker();
+		});
+	</script>
+	<!-- //End-date-piker -->
+
+	<!-- fixed navigation -->
+	<script src="static/js/fixed-nav.js"></script>
+	<!-- //fixed navigation -->
+
+	<!-- smooth scrolling -->
+	<script src="static/js/SmoothScroll.min.js"></script>
+	<!-- move-top -->
+	<script src="static/js/move-top.js"></script>
+	<!-- easing -->
+	<script src="static/js/easing.js"></script>
+	<!--  necessary snippets for few javascript files -->
+	<script src="static/js/medic.js"></script>
+
+	<script src="static/js/bootstrap.js"></script>
+	<!-- Necessary-JavaScript-File-For-Bootstrap -->
+
+	<!-- //Js files -->
+
+</body>
+
+</html>
